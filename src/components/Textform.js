@@ -37,7 +37,7 @@ const TextForm = (props) => {
   const handleExtraSpaces = () => {
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
-    props.showAlert("Extra spaces removed!", "success");
+    props.showAlert("Extra spaces removed!!", "success");
   };
 
   // TextForm.js
