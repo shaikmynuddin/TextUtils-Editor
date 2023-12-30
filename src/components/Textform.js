@@ -45,7 +45,7 @@ const TextForm = (props) => {
 
 const handleAddNote = async () => {
   try {
-      const response = await axios.post("http://localhost:8080/user", {
+      const response = await axios.post("https://empty-sort-production.up.railway.app/user", {
           content: text,
       });
       console.log("Note added:", JSON.stringify(response.data));
@@ -61,7 +61,7 @@ const handleAddNote = async () => {
 
 const fetchNotes = async () => {
   try {
-      const response = await axios.get("http://localhost:8080/notes");
+      const response = await axios.get("https://empty-sort-production.up.railway.app/notes");
       console.log("All notes:", JSON.stringify(response.data));
       // Handle the response data as needed
   } catch (error) {
