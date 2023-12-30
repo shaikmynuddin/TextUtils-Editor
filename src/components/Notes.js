@@ -11,7 +11,7 @@ const Notes = ({ mode }) => {
 
     const fetchNotes = async () => {
         try {
-            const response = await axios.get("http://localhost:8080/notes");
+            const response = await axios.get("https://empty-sort-production.up.railway.app/notes");
             console.log("All notes:", response.data);
             setNotes(response.data);
         } catch (error) {
